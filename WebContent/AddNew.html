@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	 <div id="div_json">
+   		 <h5>根据ID查找新闻</h5>
+        <br />
+	        <form action="#" method="post">
+	            <label for="id">新闻标题：</label><input type="text" name="title" />
+	            <label for="id">新闻内容：</label><input type="text" name="content" />
+	            <label for="id">新闻图片：</label><input type="text" name="image" />
+	            <label for="id">新闻出处：</label><input type="text" name="prove" />
+	            <label for="id">新闻作者：</label><input type="text" name="user" />
+
+	            <input type="button" class="btn" value="删除新闻"/>
+	        </form>
+        <br />
+        <h5>显示结果</h5>
+        <br />
+        <ul>
+            <li>新闻标题：<span id="title">赞无数据</span></li>
+            <li>新闻内容：<span id="content">赞无数据</span></li>
+            <li>新闻图片：<span id="image">赞无数据</span></li>
+            <li>新闻出处：<span id="result">赞无数据</span></li>
+            <li>新闻作者：<span id="result">赞无数据</span></li>
+            <li>时间：<span id="result">赞无数据</span></li>
+            <li>点击量：<span id="result">赞无数据</span></li>
+        </ul>
+    </div>
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript">
+        /* 提交结果，执行ajax */
+        function btn(){
+            var $btn = $(".btn");//获取按钮元素
+            //给按钮绑定点击事件
+            $btn.bind("click",function(){
+                $.ajax({
+                    type:"post",
+                    url:"addNew",
+                    data:{//设置数据源
+                    	title:$("input[name=id]").val(),
+                    	content:$("input[name=content]").val(),
+                    	image:$("input[name=image]").val(),
+                    	prove:$("input[name=prove]").val(),
+                    	user:$("input[name=user]").val()
+                    },
+                    dataType:"json",//设置需要返回的数据类型
+                    success:function(data){
+                    	alert(data);
+                        var d = eval("("+data+")");//将数据转换成json类型，可以把data用alert()输出出来看看到底是什么样的结构
+                        //得到的d是一个形如{"key":"value","key1":"value1"}的数据类型，然后取值出来
+                        $("#result").text(""+d.result+"");
+                    },
+                    error:function(){
+                        alert("系统异常，请稍后重试！");
+                    }//这里不要加","
+                });
+            });
+        }
+
+        /* 页面加载完成，绑定事件 */
+        $(document).ready(function(){          
+            btn();//点击提交，执行ajax
+        });
+    </script>
+</body>
+</html>

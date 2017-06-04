@@ -1,0 +1,318 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title> 
+
+    <!-- mobile responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=kvSmNELehWGES3xafzLUhh4rCUtjaAWK"></script>
+
+</head>
+<body>
+
+<div class="boxed_wrapper">
+
+    <section class="theme_menu stricky">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 kaozuo">
+                    <div class="main-logo">
+                        <a href="index.html"><img src="images/logo/Newlogo.png" alt="" style="position: absolute;top: -90%;"></a>
+                    </div>
+                </div>
+                <div class="col-md-8 menu-column kaoyou">
+                    <nav class="menuzord" role="navigation" id="main_menu" style="margin-top: 33px;">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="index.html">首页</a></li>
+                            <li>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    关于我们
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="./about.html">学校简介</a></li>
+                                    <!--<li class="divider"></li>
+                                    <li><a href="#">校园环境</a></li>-->
+                                    <li class="divider"></li>
+                                    <li><a href="schoolNews.html">学院新闻</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    课程体系
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="./youthImprove.html">青训提高班</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="eleProfession.html">电竞职业班</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="./eleAnchor.html">电竞主播班</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="./teamCoach.html">战队教练班</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    联系我们
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="pay.html">付款方式</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="Contact.html">联系方式</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="busline.html">乘车路线</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">如何报名</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    合作企业
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="cooperate.html">合作企业</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="Filing.html">备案信息</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav> <!-- End of #main_menu -->
+                </div>
+                <!--            <div class="right-column">
+                                <div class="right-area">
+                                    <div class="nav_side_content">
+                                        <div class="search_option">
+                                            <button class="search tran3s dropdown-toggle color1_bg" id="searchDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                            <form action="#" class="dropdown-menu" aria-labelledby="searchDropdown">
+                                                <input type="text" placeholder="Search...">
+                                                <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                                            </form>
+                                       </div>
+                                   </div>
+                                </div>
+
+                            </div>-->
+            </div>
+
+
+        </div> <!-- End of .conatiner -->
+    </section>
+
+<div class="inner-banner text-center">
+    <div class="container">
+        <div class="box">
+        </div><!-- /.box -->
+        <div class="breadcumb-wrapper">
+            <div class="clearfix">
+                <div class="pull-left">
+                    <ul class="list-inline link-list">
+                        <li>
+                            <a href="index.html">首页</a>
+                        </li><!-- comment for inline hack
+                        --><li style="color: #C8A063;">
+                            乘车路线
+                        </li>
+                    </ul><!-- /.list-line -->
+                </div><!-- /.pull-left -->
+            </div><!-- /.container -->
+        </div>
+    </div><!-- /.container -->
+</div>
+
+    <section id="titleMessage">
+        <div class="resp-tabs-list" style="height: 36%;margin-left: 10em;">
+            <img src="images/logo/left4.png" style="width: 15%; height: auto;max-width: 100%; display: block;position: relative;left: 30%;top: 3em;">
+            <div style="position: relative;bottom: 5em;left: 38%;color: grey;">
+                <h1 style="display: inline;font-size: 3em;"><strong>乘车路线</strong><h3 style="display: inline;line-height: 1em;">Traffic</h3></h1>
+            </div>
+        </div>
+    </section>
+
+<section class="default-section sec-padd">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <!--百度地图容器-->
+<!--                <div style="width:700px;height:550px;border:#ccc solid 1px;font-size:12px" id="map"></div>-->
+
+                <div class="text-content">
+                    <div class="articleContent">
+                        <div style="background: rgba(200,160,99,0.2);width: 80%;margin: auto;padding: 1% 0 1% 1%;">
+                            <h2 style="text-align: left;color: #C8A063;">原初集团</h2>
+                            <h3>成都汇融国际广场A座25楼</h3>
+                        </div>
+                    <br>
+                    <div class="col-md-7 col-sm-12 col-xs-12">
+                        <iframe width="604" height="610" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://j.map.baidu.com/217kI"></iframe>
+                    </div>
+
+                    <div class="col-md-5 col-sm-12 col-xs-12">
+
+                        <p class="MsoNormal">
+                            <b><span style="color: #C8A063;font-size:18px;">附近公交</span></b><b></b>
+                        </p>
+                        <p class="MsoNormal" style="text-indent:21.0000pt;">
+                            公交：环球中心(74路; 125路; 171a路; 171b路; 503路; 801路; 898路)
+                        </p>
+                        <p class="MsoNormal" style="text-indent:21.0000pt;">
+                            锦悦西路(184路; 801路; 1128路; g25路; g29路; g50路; g51路; g52路; g53路;
+                            g54路; g55路; g56路; g57路; g58路; g59路; g60路; g61路; g62路; g67路; g68路; g69路; 夜间专线298路)
+                        </p>
+                        <p class="MsoNormal" style="text-indent:21.0000pt;">
+                            高新区孵化园(74路; 125路; 184路; 509路; 898路; 1128路; g25路; g29路)
+                        </p>
+                        <p class="MsoNormal">
+                            <b><span style="color: #C8A063;font-size:18px;">附近地铁</span></b><b></b>
+                        </p>
+                        <p class="MsoNormal" style="text-indent:21.0000pt;">
+                            地铁：地铁1号线，地铁9号线（在建）
+                        </p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <div class="footer-bottom">
+        <div class="col-md-5 col-sm-12">
+
+        </div>
+        <div class="col-md-7 col-sm-12">
+            <ul class="top-bar-info" style="line-height: 40px;margin-top: 10%;">
+                <li><i class="icon-technology"></i>Phone: +86 18020736668 陈老师</li>
+                <li><i class="icon-note2"></i>edu@175kh.com</li>
+                <li>原初七煌教育咨询有限公司版权所有  /  沪ICP备13020757号</li>
+            </ul>
+            <div class="float_right">
+
+            </div>
+        </div>
+    </div>
+
+<!-- Scroll Top Button -->
+    <button class="scroll-top tran3s color2_bg">
+        <span class="fa fa-angle-up"></span>
+    </button>
+    <!-- pre loader  -->
+    <div class="preloader"></div>
+
+
+    <!-- jQuery js -->
+    <script src="js/jquery.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- jQuery ui js -->
+    <script src="js/jquery-ui.js"></script>
+    <!-- owl carousel js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- jQuery validation -->
+    <script src="js/jquery.validate.min.js"></script>
+
+    <!-- mixit up -->
+    <script src="js/wow.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/menuzord.js"></script>
+
+    <!-- revolution slider js -->
+    <script src="js/jquery.themepunch.tools.min.js"></script>
+    <script src="js/jquery.themepunch.revolution.min.js"></script>
+    <script src="js/revolution.extension.actions.min.js"></script>
+    <script src="js/revolution.extension.carousel.min.js"></script>
+    <script src="js/revolution.extension.kenburn.min.js"></script>
+    <script src="js/revolution.extension.layeranimation.min.js"></script>
+    <script src="js/revolution.extension.migration.min.js"></script>
+    <script src="js/revolution.extension.navigation.min.js"></script>
+    <script src="js/revolution.extension.parallax.min.js"></script>
+    <script src="js/revolution.extension.slideanims.min.js"></script>
+    <script src="js/revolution.extension.video.min.js"></script>
+
+    <!-- fancy box -->
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <script src="js/jquery.polyglot.language.switcher.js"></script>
+    <script src="js/nouislider.js"></script>
+    <script src="js/jquery.bootstrap-touchspin.js"></script>
+    <script src="js/SmoothScroll.js"></script>
+    <script src="js/jquery.appear.js"></script>
+    <script src="js/jquery.countTo.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/imagezoom.js"></script> 
+    <script src="js/bxslider.js"></script> 
+    <script id="map-script" src="js/default-map.js"></script>
+    <script src="js/custom.js"></script>
+
+</div>
+
+    <script type="text/javascript">
+        //创建和初始化地图函数：
+        function initMap(){
+            createMap();//创建地图
+            setMapEvent();//设置地图事件
+            addMapControl();//向地图添加控件
+            addMapOverlay();//向地图添加覆盖物
+        }
+        function createMap(){
+            map = new BMap.Map("map");
+            map.centerAndZoom(new BMap.Point(104.099772,30.598862),19);
+        }
+        function setMapEvent(){
+            map.enableScrollWheelZoom();
+            map.enableKeyboard();
+            map.enableDragging();
+            map.enableDoubleClickZoom()
+        }
+        function addClickHandler(target,window){
+            target.addEventListener("click",function(){
+                target.openInfoWindow(window);
+            });
+        }
+        function addMapOverlay(){
+            var markers = [
+                {content:"我的备注",title:"初原传媒",imageOffset: {width:0,height:3},position:{lat:30.598847,lng:104.099826}}
+            ];
+            for(var index = 0; index < markers.length; index++ ){
+                var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
+                var marker = new BMap.Marker(point,{icon:new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
+                    imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
+                })});
+                var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
+                var opts = {
+                    width: 200,
+                    title: markers[index].title,
+                    enableMessage: false
+                };
+                var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
+                marker.setLabel(label);
+                addClickHandler(marker,infoWindow);
+                map.addOverlay(marker);
+            };
+        }
+        //向地图添加控件
+        function addMapControl(){
+            var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+            scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+            map.addControl(scaleControl);
+            var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+            map.addControl(navControl);
+            var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:true});
+            map.addControl(overviewControl);
+        }
+        var map;
+        initMap();
+    </script>
+</body>
+</html>

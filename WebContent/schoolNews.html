@@ -1,0 +1,543 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <!-- mobile responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!--引入wangEditor.css-->
+    <link rel="stylesheet" type="text/css" href="wangEditor/dist/css/wangEditor.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/newsFlexslider/flexslider.css" />
+    <style type="text/css">
+        #main{
+            width:60%;
+            margin: auto;
+        }
+        .slides li{
+            background-color: #F3F3F3;
+        }
+        .slides li p{
+            padding: 5% 0 5% 5%;
+            cursor: pointer;
+        }
+        .newsTitle{
+            font-size: 1.3em;
+        }
+        .newsContent{
+            padding: 0% 0 5% 5%!important;
+        }
+        .slides li div{
+            height: 14em;
+            width: 100%;
+        }
+        .slides li div:hover{
+            background-size: 100%!important;
+        }
+        .slides li div:hover p{
+            color: white;
+        }
+        .slides li div:hover span{
+            color: white;
+        }
+        .slides li div:hover .newsMengCeng{
+            background-color:rgba(0,0,0,0.5)!important;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="boxed_wrapper">
+
+    <section class="theme_menu stricky">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 kaozuo">
+                    <div class="main-logo">
+                        <a href="index.html"><img src="images/logo/Newlogo.png" alt="" style="position: absolute;top: -90%;"></a>
+                    </div>
+                </div>
+                <div class="col-md-8 menu-column kaoyou">
+                    <nav class="menuzord" role="navigation" id="main_menu" style="margin-top: 33px;">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="index.html">首页</a></li>
+                            <li>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    关于我们
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="./about.html">学校简介</a></li>
+                                    <!--<li class="divider"></li>
+                                    <li><a href="#">校园环境</a></li>-->
+                                    <li class="divider"></li>
+                                    <li><a href="schoolNews.html">学院新闻</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    课程体系
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="./youthImprove.html">青训提高班</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="eleProfession.html">电竞职业班</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="./eleAnchor.html">电竞主播班</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="./teamCoach.html">战队教练班</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    联系我们
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="pay.html">付款方式</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="Contact.html">联系方式</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="busline.html">乘车路线</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">如何报名</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    合作企业
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="cooperate.html">合作企业</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="Filing.html">备案信息</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav> <!-- End of #main_menu -->
+                </div>
+                <!--            <div class="right-column">
+                                <div class="right-area">
+                                    <div class="nav_side_content">
+                                        <div class="search_option">
+                                            <button class="search tran3s dropdown-toggle color1_bg" id="searchDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                            <form action="#" class="dropdown-menu" aria-labelledby="searchDropdown">
+                                                <input type="text" placeholder="Search...">
+                                                <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                                            </form>
+                                       </div>
+                                   </div>
+                                </div>
+
+                            </div>-->
+            </div>
+
+
+        </div> <!-- End of .conatiner -->
+    </section>
+
+    <div class="inner-banner text-center">
+        <div class="container">
+            <div class="box">
+            </div><!-- /.box -->
+            <div class="breadcumb-wrapper">
+                <div class="clearfix">
+                    <div class="pull-left">
+                        <ul class="list-inline link-list">
+                            <li>
+                                <a href="index.html">首页</a>
+                            </li><!-- comment for inline hack
+                        --><li style="color: #C8A063;">
+                            学院新闻
+                        </li>
+                        </ul><!-- /.list-line -->
+                    </div><!-- /.pull-left -->
+                </div><!-- /.container -->
+            </div>
+        </div><!-- /.container -->
+    </div>
+
+    <section id="titleMessage">
+        <div class="resp-tabs-list" style="height: 100%;margin-left: 10em;">
+            <img src="images/logo/left4.png" style="width: 15%; height: auto;max-width: 100%; display: block;position: relative;left: 30%;top: 3em;">
+            <div style="position: relative;bottom: 5em;left: 38%;color: grey;">
+                <h1 style="display: inline;font-size: 3em;"><strong>学院新闻</strong><h3 style="display: inline;line-height: 1em;margin-left: 1em;">News</h3></h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="service">
+        <div class="container">
+            <div class="section-title center w3_tittle second two">
+                <h3 class="newsType" style="display: inline;padding: 1% 1.5%;">最新</h3><h3 class="newsType" style="display: inline;padding: 1% 1.5%">全部</h3>
+                <div class="line-style second">
+                    <span class="second"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="default-section sec-padd">
+        <div id="main">
+            <div class="flexslider1 carousel">
+                <ul class="slides">
+                    <!--第一页-->
+                    <li>
+                        <div style="background:url(images/news/20170413.jpg);background-size: 0%;">
+                            <div class="newsMengCeng" style="background-color:rgba(0,0,0,0);">
+                                <p>2016 06-15</p>
+                                <p class="newsTitle">七煌电竞体育专题 打造电竞新时代</p>
+                                <p class="newsContent">七煌电竞体育落户于上海松江大学城，为广大玩家提供一个正规化的电竞训练平台。</p>
+                                <font class="attrNews">
+                                    <span class="author">七煌</span>
+                                    <span class="click">260</span>
+                                </font>
+                            </div>
+                        </div><hr style="width: 90%;margin: auto;border-top: 1px solid #ABABAB;"/><p class="newsXQ">详情</p>
+                        <hr style="background-color: white;height: 3em;margin: auto;"/>
+                        <div style="background:url(images/news/20161129.png);background-size: 0%;">
+                            <div class="newsMengCeng" style="background-color:rgba(0,0,0,0);">
+                                <p>2016 06-15</p>
+                                <p class="newsTitle">为了同一个梦想 七煌电竞招生点滴</p>
+                                <p class="newsContent">2014年第一期七煌电竞体育招生落下帷幕，招生期间官方客服接待了总计9146人次的咨询。</p>
+                                <font class="attrNews">
+                                    <span class="author">七煌</span>
+                                    <span class="click">151</span>
+                                </font>
+                            </div>
+                        </div><hr style="width: 90%;margin: auto;border-top: 1px solid #ABABAB;"/><p class="newsXQ">详情</p>
+                    </li>
+                    <li>
+                        <div style="background:url(images/news/20161205.jpg);background-size: 0%;">
+                            <div class="newsMengCeng" style="background-color:rgba(0,0,0,0);">
+                                <p>2016 06-15</p>
+                                <p class="newsTitle">七煌电竞体育第一届学员档案册</p>
+                                <p class="newsContent">七煌电竞体育首个培训班接近尾声啦，昨天LACE联盟已将学员档案册转发给各俱乐部负责人。</p>
+                                <font class="attrNews">
+                                    <span class="author">七煌</span>
+                                    <span class="click">654</span>
+                                </font>
+                            </div>
+                        </div><hr style="width: 90%;margin: auto;border-top: 1px solid #ABABAB;"/><p class="newsXQ">详情</p>
+                        <hr style="background-color: white;height: 3em;margin: auto;"/>
+                        <div style="background:url(images/news/20170213.jpg);background-size: 0%;">
+                            <div class="newsMengCeng" style="background-color:rgba(0,0,0,0);">
+                                <p>2016 06-15</p>
+                                <p class="newsTitle">第一集七煌大学生电竞争霸赛圆满结束</p>
+                                <p class="newsContent">第一集七煌大学生电竞争霸赛于3.29在七煌松江教学部正式开业。</p>
+                                <font class="attrNews">
+                                    <span class="author">七煌</span>
+                                    <span class="click">356</span>
+                                </font>
+                            </div>
+                        </div><hr style="width: 90%;margin: auto;border-top: 1px solid #ABABAB;"/><p class="newsXQ">详情</p>
+                    </li>
+                    <li>
+                        <div style="background:url(images/news/20170215.jpg);background-size: 0%;">
+                            <div class="newsMengCeng" style="background-color:rgba(0,0,0,0);">
+                                <p>2016 06-15</p>
+                                <p class="newsTitle">探访七煌电竞基地 家长期望持续发展</p>
+                                <p class="newsContent">2014年3月22日，七煌电竞培训基地在上海松江大学正式开业。</p>
+                                <font class="attrNews">
+                                    <span class="author">七煌</span>
+                                    <span class="click">238</span>
+                                </font>
+                            </div>
+                        </div><hr style="width: 90%;margin: auto;border-top: 1px solid #ABABAB;"/><p class="newsXQ">详情</p>
+                        <hr style="background-color: white;height: 3em;margin: auto;"/>
+                        <div style="background:url(images/news/20170411.jpg);background-size: 0%;">
+                            <div class="newsMengCeng" style="background-color:rgba(0,0,0,0);">
+                                <p>2016 06-15</p>
+                                <p class="newsTitle">七煌电竞招生数据 最强王者惨招淘汰</p>
+                                <p class="newsContent">在本次招生工作开始后，七煌电竞体育官方邮箱累计收到了报名表7000余份。</p>
+                                <font class="attrNews">
+                                    <span class="author">七煌</span>
+                                    <span class="click">685</span>
+                                </font>
+                            </div>
+                        </div><hr style="width: 90%;margin: auto;border-top: 1px solid #ABABAB;"/><p>详情</p>
+                    </li>
+
+                    <!--第二页-->
+                    <li>
+                        <div style="background:url(images/news/20170413.jpg);background-size: 0%;">
+                            <div class="newsMengCeng" style="background-color:rgba(0,0,0,0);">
+                                <p>2016 06-15</p>
+                                <p class="newsTitle">七煌电竞体育专题 打造电竞新时代</p>
+                                <p class="newsContent">七煌电竞体育落户于上海松江大学城，为广大玩家提供一个正规化的电竞训练平台。</p>
+                                <font class="attrNews">
+                                    <span class="author">七煌</span>
+                                    <span class="click">260</span>
+                                </font>
+                            </div>
+                        </div><hr style="width: 90%;margin: auto;border-top: 1px solid #ABABAB;"/><p class="newsXQ">详情</p>
+                        <hr style="background-color: white;height: 3em;margin: auto;"/>
+                        <div style="background:url(images/news/20161129.png);background-size: 0%;">
+                            <div class="newsMengCeng" style="background-color:rgba(0,0,0,0);">
+                                <p>2016 06-15</p>
+                                <p class="newsTitle">为了同一个梦想 七煌电竞招生点滴</p>
+                                <p class="newsContent">2014年第一期七煌电竞体育招生落下帷幕，招生期间官方客服接待了总计9146人次的咨询。</p>
+                                <font class="attrNews">
+                                    <span class="author">七煌</span>
+                                    <span class="click">151</span>
+                                </font>
+                            </div>
+                        </div><hr style="width: 90%;margin: auto;border-top: 1px solid #ABABAB;"/><p class="newsXQ">详情</p>
+                    </li>
+                    <li>
+                        <div style="background:url(images/news/20161205.jpg);background-size: 0%;">
+                            <div class="newsMengCeng" style="background-color:rgba(0,0,0,0);">
+                                <p>2016 06-15</p>
+                                <p class="newsTitle">七煌电竞体育第一届学员档案册</p>
+                                <p class="newsContent">七煌电竞体育首个培训班接近尾声啦，昨天LACE联盟已将学员档案册转发给各俱乐部负责人。</p>
+                                <font class="attrNews">
+                                    <span class="author">七煌</span>
+                                    <span class="click">654</span>
+                                </font>
+                            </div>
+                        </div><hr style="width: 90%;margin: auto;border-top: 1px solid #ABABAB;"/><p class="newsXQ">详情</p>
+                        <hr style="background-color: white;height: 3em;margin: auto;"/>
+                        <div style="background:url(images/news/20170213.jpg);background-size: 0%;">
+                            <div class="newsMengCeng" style="background-color:rgba(0,0,0,0);">
+                                <p>2016 06-15</p>
+                                <p class="newsTitle">第一集七煌大学生电竞争霸赛圆满结束</p>
+                                <p class="newsContent">第一集七煌大学生电竞争霸赛于3.29在七煌松江教学部正式开业。</p>
+                                <font class="attrNews">
+                                    <span class="author">七煌</span>
+                                    <span class="click">356</span>
+                                </font>
+                            </div>
+                        </div><hr style="width: 90%;margin: auto;border-top: 1px solid #ABABAB;"/><p class="newsXQ">详情</p>
+                    </li>
+                    <li>
+                        <div style="background:url(images/news/20170215.jpg);background-size: 0%;">
+                            <div class="newsMengCeng" style="background-color:rgba(0,0,0,0);">
+                                <p>2016 06-15</p>
+                                <p class="newsTitle">探访七煌电竞基地 家长期望持续发展</p>
+                                <p class="newsContent">2014年3月22日，七煌电竞培训基地在上海松江大学正式开业。</p>
+                                <font class="attrNews">
+                                    <span class="author">七煌</span>
+                                    <span class="click">238</span>
+                                </font>
+                            </div>
+                        </div><hr style="width: 90%;margin: auto;border-top: 1px solid #ABABAB;"/><p class="newsXQ">详情</p>
+                        <hr style="background-color: white;height: 3em;margin: auto;"/>
+                        <div style="background:url(images/news/20170411.jpg);background-size: 0%;">
+                            <div class="newsMengCeng" style="background-color:rgba(0,0,0,0);">
+                                <p>2016 06-15</p>
+                                <p class="newsTitle">七煌电竞招生数据 最强王者惨招淘汰</p>
+                                <p class="newsContent">在本次招生工作开始后，七煌电竞体育官方邮箱累计收到了报名表7000余份。</p>
+                                <font class="attrNews">
+                                    <span class="author">七煌</span>
+                                    <span class="click">685</span>
+                                </font>
+                            </div>
+                        </div><hr style="width: 90%;margin: auto;border-top: 1px solid #ABABAB;"/><p>详情</p>
+                    </li>
+
+                    <!--第三页-->
+                    <li>
+                        <div style="background:url(images/news/20170413.jpg);background-size: 0%;">
+                            <div class="newsMengCeng" style="background-color:rgba(0,0,0,0);">
+                                <p>2016 06-15</p>
+                                <p class="newsTitle">七煌电竞体育专题 打造电竞新时代</p>
+                                <p class="newsContent">七煌电竞体育落户于上海松江大学城，为广大玩家提供一个正规化的电竞训练平台。</p>
+                                <font class="attrNews">
+                                    <span class="author">七煌</span>
+                                    <span class="click">260</span>
+                                </font>
+                            </div>
+                        </div><hr style="width: 90%;margin: auto;border-top: 1px solid #ABABAB;"/><p class="newsXQ">详情</p>
+                        <hr style="background-color: white;height: 3em;margin: auto;"/>
+                        <div style="background:url(images/news/20161129.png);background-size: 0%;">
+                            <div class="newsMengCeng" style="background-color:rgba(0,0,0,0);">
+                                <p>2016 06-15</p>
+                                <p class="newsTitle">为了同一个梦想 七煌电竞招生点滴</p>
+                                <p class="newsContent">2014年第一期七煌电竞体育招生落下帷幕，招生期间官方客服接待了总计9146人次的咨询。</p>
+                                <font class="attrNews">
+                                    <span class="author">七煌</span>
+                                    <span class="click">151</span>
+                                </font>
+                            </div>
+                        </div><hr style="width: 90%;margin: auto;border-top: 1px solid #ABABAB;"/><p class="newsXQ">详情</p>
+                    </li>
+                    <li>
+                        <div style="background:url(images/news/20161205.jpg);background-size: 0%;">
+                            <div class="newsMengCeng" style="background-color:rgba(0,0,0,0);">
+                                <p>2016 06-15</p>
+                                <p class="newsTitle">七煌电竞体育第一届学员档案册</p>
+                                <p class="newsContent">七煌电竞体育首个培训班接近尾声啦，昨天LACE联盟已将学员档案册转发给各俱乐部负责人。</p>
+                                <font class="attrNews">
+                                    <span class="author">七煌</span>
+                                    <span class="click">654</span>
+                                </font>
+                            </div>
+                        </div><hr style="width: 90%;margin: auto;border-top: 1px solid #ABABAB;"/><p class="newsXQ">详情</p>
+                        <hr style="background-color: white;height: 3em;margin: auto;"/>
+                        <div style="background:url(images/news/20170213.jpg);background-size: 0%;">
+                            <div class="newsMengCeng" style="background-color:rgba(0,0,0,0);">
+                                <p>2016 06-15</p>
+                                <p class="newsTitle">第一集七煌大学生电竞争霸赛圆满结束</p>
+                                <p class="newsContent">第一集七煌大学生电竞争霸赛于3.29在七煌松江教学部正式开业。</p>
+                                <font class="attrNews">
+                                    <span class="author">七煌</span>
+                                    <span class="click">356</span>
+                                </font>
+                            </div>
+                        </div><hr style="width: 90%;margin: auto;border-top: 1px solid #ABABAB;"/><p class="newsXQ">详情</p>
+                    </li>
+                    <li>
+                        <div style="background:url(images/news/20170215.jpg);background-size: 0%;">
+                            <div class="newsMengCeng" style="background-color:rgba(0,0,0,0);">
+                                <p>2016 06-15</p>
+                                <p class="newsTitle">探访七煌电竞基地 家长期望持续发展</p>
+                                <p class="newsContent">2014年3月22日，七煌电竞培训基地在上海松江大学正式开业。</p>
+                                <font class="attrNews">
+                                    <span class="author">七煌</span>
+                                    <span class="click">238</span>
+                                </font>
+                            </div>
+                        </div><hr style="width: 90%;margin: auto;border-top: 1px solid #ABABAB;"/><p class="newsXQ">详情</p>
+                        <hr style="background-color: white;height: 3em;margin: auto;"/>
+                        <div style="background:url(images/news/20170411.jpg);background-size: 0%;">
+                            <div class="newsMengCeng" style="background-color:rgba(0,0,0,0);">
+                                <p>2016 06-15</p>
+                                <p class="newsTitle">七煌电竞招生数据 最强王者惨招淘汰</p>
+                                <p class="newsContent">在本次招生工作开始后，七煌电竞体育官方邮箱累计收到了报名表7000余份。</p>
+                                <font class="attrNews">
+                                    <span class="author">七煌</span>
+                                    <span class="click">685</span>
+                                </font>
+                            </div>
+                        </div><hr style="width: 90%;margin: auto;border-top: 1px solid #ABABAB;"/><p>详情</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer-bottom">
+        <div class="col-md-5 col-sm-12">
+
+        </div>
+        <div class="col-md-7 col-sm-12">
+            <ul class="top-bar-info" style="line-height: 40px;margin-top: 10%;">
+                <li><i class="icon-technology"></i>Phone: +86 18020736668 陈老师</li>
+                <li><i class="icon-note2"></i>edu@175kh.com</li>
+                <li>原初七煌教育咨询有限公司版权所有  /  沪ICP备13020757号</li>
+            </ul>
+            <div class="float_right">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll Top Button -->
+    <button class="scroll-top tran3s color2_bg">
+        <span class="fa fa-angle-up"></span>
+    </button>
+    <!-- pre loader  -->
+    <div class="preloader"></div>
+
+
+    <!-- jQuery js -->
+    <script src="js/jquery.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- jQuery ui js -->
+    <script src="js/jquery-ui.js"></script>
+    <!-- owl carousel js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- jQuery validation -->
+    <script src="js/jquery.validate.min.js"></script>
+
+    <!-- mixit up -->
+    <script src="js/wow.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/menuzord.js"></script>
+
+    <!-- revolution slider js -->
+    <script src="js/jquery.themepunch.tools.min.js"></script>
+    <script src="js/jquery.themepunch.revolution.min.js"></script>
+    <script src="js/revolution.extension.actions.min.js"></script>
+    <script src="js/revolution.extension.carousel.min.js"></script>
+    <script src="js/revolution.extension.kenburn.min.js"></script>
+    <script src="js/revolution.extension.layeranimation.min.js"></script>
+    <script src="js/revolution.extension.migration.min.js"></script>
+    <script src="js/revolution.extension.navigation.min.js"></script>
+    <script src="js/revolution.extension.parallax.min.js"></script>
+    <script src="js/revolution.extension.slideanims.min.js"></script>
+    <script src="js/revolution.extension.video.min.js"></script>
+
+    <!-- fancy box -->
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <script src="js/jquery.polyglot.language.switcher.js"></script>
+    <script src="js/nouislider.js"></script>
+    <script src="js/jquery.bootstrap-touchspin.js"></script>
+    <script src="js/SmoothScroll.js"></script>
+    <script src="js/jquery.appear.js"></script>
+    <script src="js/jquery.countTo.js"></script>
+    <!--<script src="js/jquery.flexslider.js"></script>-->
+    <script src="js/imagezoom.js"></script>
+    <script src="js/bxslider.js"></script>
+    <script id="map-script" src="js/default-map.js"></script>
+    <script src="js/custom.js"></script>
+
+    <!--引入jquery和wangEditor.js-->   <!--注意：javascript必须放在body最后，否则可能会出现问题-->
+    <script type="text/javascript" src="wangEditor/dist/js/lib/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="wangEditor/dist/js/wangEditor.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            function newsInit(){
+                $(".flexslider1").flexslider({
+                    animation: "slide",
+                    animationLoop: false,
+                    itemWidth: 710,
+                    itemMargin: 5,
+                    minItems: 3,
+                    maxItems: 4,
+                    directionNav: true,
+                    slideshow: false
+                });
+                $(".flex-control-nav").hide();
+                $(".flex-prev").hide();
+                $(".flex-next").hide();
+            }
+            newsInit();
+
+
+
+            $(".newsType:last").click(function () {
+                $(".flex-control-nav").show();
+                $(".flex-prev").show();
+                $(".flex-next").show();
+            });
+            $(".newsType:first").click(function () {
+                $(".flex-control-nav li a:first").click();
+                newsInit();
+            });
+
+
+            $(".newsXQ").click(function () {
+                window.open("./newContent1.html");
+            });
+        });
+
+    </script>
+</div>
+
+</body>
+</html>

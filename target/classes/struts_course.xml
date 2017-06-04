@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <!--解决乱码    -->
+    <constant name="struts.i18n.encoding" value="UTF-8"></constant>
+    <package name="course" extends="struts-default,json-default">
+        <!-- 添加课程  -->
+		<action name="addCourse" class="com.chuyuan.action.course.AddCourseAction" method="add">
+			<result name="fail">
+			</result>
+            <!-- 返回json类型数据 -->
+            <result type="json">
+                <param name="root">result</param>
+            </result>		
+        </action>
+        <!-- 根据ID查找课程  -->
+		<action name="findCourse" class="com.chuyuan.action.course.FindCourseAction" method="findCouById">
+			<result name="fail">
+			</result>
+            <!-- 返回json类型数据 -->
+            <result type="json">
+                <param name="root">result</param>
+            </result>		
+        </action>
+        <!-- 查找所有课程 -->
+        <action name="findAllCourse" class="com.chuyuan.action.course.FindAllCourseAction" method="findAllCou">
+			<result name="fail">
+			</result>
+            <!-- 返回json类型数据 -->
+            <result type="json">
+                <param name="root">result</param>
+            </result>		
+        </action>
+        <!-- 根据id删除课程 -->
+        <action name="deleteCourse" class="com.chuyuan.action.course.DeleteCourseAction" method="deleteCou">
+			<result name="fail">
+			</result>
+            <!-- 返回json类型数据 -->
+            <result type="json">
+                <param name="root">result</param>
+            </result>		
+        </action>
+        <!-- 修改课程 -->
+        <action name="updateCourse" class="com.chuyuan.action.course.UpdateCourseAction" method="updateCou">
+			<result name="fail">
+			</result>
+            <!-- 返回json类型数据 -->
+            <result type="json">
+                <param name="root">result</param>
+            </result>		
+        </action>
+    </package>
+</struts>

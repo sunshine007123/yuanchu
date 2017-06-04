@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <!--解决乱码    -->
+    <constant name="struts.i18n.encoding" value="UTF-8"></constant>
+    <package name="simpleton" extends="struts-default,json-default">
+        <action name="TestAction" class="com.chuyuan.action.TestAction" method="excuteAjax">
+            <result name="fail"></result>
+            <!-- 返回json类型数据 -->
+            <result type="json">
+                <param name="root">result<!-- result是action中设置的变量名，也是页面需要返回的数据，该变量必须有setter和getter方法 --></param>
+            </result>
+        </action>
+        
+        <!-- findNew 根据ID查找新闻  -->
+		<action name="findNew" class="com.chuyuan.action.NewAction" method="findNewById">
+			<result name="fail"></result>
+            <!-- 返回json类型数据 -->
+            <result type="json">
+                <param name="root">result</param>
+            </result>		
+        </action>
+        
+    <!-- showNewsToIndex 按倒序查找4条新闻显示在首页，调试期间需要改配置！！ -->
+        <action name="showNewsToIndex" class="com.chuyuan.action.NewAction" method="findNewToIndex">
+            <result name="fail"></result>
+            <!-- 返回json类型数据 -->
+            <result type="json">
+                <param name="root">result</param>
+                /TestIndex.thml
+            </result>
+        </action>
+        <!-- 查找所有新闻，返回新闻列表 -->
+        <action name="findAllNews" class="com.chuyuan.action.NewAction" method="findAllNews">
+            <result name="fail">/error.jsp</result>
+            <!-- 返回json类型数据 -->
+            <result name="success" type="json">
+                <param name="root">result</param>
+                /NewList.html
+            </result>
+        </action>
+        <action name="deleteNew" class="com.chuyuan.action.NewAction" method="delete">
+        	<result name="success" type="json">
+        		<param name="root">
+        			result
+        		</param>
+        	</result>
+        </action>
+        <!-- 添加 -->
+        <action name="addNew" class="com.chuyuan.action.NewAction" method="add">
+        	<result name="success" type="json">
+        		<param name="root">
+        			result
+        		</param>
+        	</result>
+        </action>
+        <action name="updateNew" class="com.chuyuan.action.NewAction" method="updateNew">
+        	<result name="success" type="json">
+        		<param name="root">
+        			result
+        		</param>
+        	</result>
+        </action>
+       <!-- testAloud -->
+       <action name="testAloud" class="com.chuyuan.action.aloud.AloudAction" method="testAloud">
+        	<result name="success" type="json">
+        		<param name="root">
+        			result
+        		</param>
+        	</result>
+        </action>
+    </package>
+</struts>

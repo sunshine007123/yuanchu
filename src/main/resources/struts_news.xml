@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="News" extends="struts-default" namespace="/">
+		<action name="showNewsList" class="com.chuyuan.action.NewAction" method="findAllNews">
+			<result name="success">/newsList.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="showNew" class="com.chuyuan.action.NewAction" method="findAllNews">
+			<result name="success">/news.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="findNewById" class="com.chuyuan.action.NewAction" method="findNewById">
+			<result name="success">/news.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+	</package>
+	
+	
+</struts>
